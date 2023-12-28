@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { AriaAttributes, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -6,8 +6,8 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   const userId: number = Math.PI;
-  function mamad(kir: number): string {
-    return `2+${kir}`;
+  function mamad(kir: number): object {
+    return { name: kir };
   }
   const mamad2: number[] = [];
   function mamad3(kir: Array<number>): Array<number> {
@@ -16,6 +16,11 @@ function App() {
 
   const jakesh = mamad3([123452, 21, 123]);
   mamad(2);
+  const mamad11: Array<number> = [];
+  function koni323(kiri: number): Array<string> {
+    return [`${kiri}+2`];
+  }
+  koni323(3);
   return (
     <>
       <div>
