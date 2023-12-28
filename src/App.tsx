@@ -9,6 +9,12 @@ function App() {
   function mamad(kir: number): string {
     return `2+${kir}`;
   }
+  const mamad2: number[] = [];
+  function mamad3(kir: Array<number>): Array<number> {
+    return [kir[0]];
+  }
+
+  const jakesh = mamad3([123452, 21, 123]);
   mamad(2);
   return (
     <>
@@ -36,6 +42,8 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+        <br />
+        {jakesh}
       </p>
     </>
   );
