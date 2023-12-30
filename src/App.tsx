@@ -1,9 +1,9 @@
-import { AriaAttributes, useState } from "react";
+import React, { AriaAttributes, useState } from "react";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
   const userId: number = Math.PI;
   function mamad(kir: number): object {
     return { name: kir };
@@ -14,12 +14,15 @@ function App() {
   }
 
   const jakesh = mamad3([123452, 21, 123]);
-  mamad(2);
+  const koni = mamad(2);
   const mamad11: Array<number> = [];
-  function koni323(kiri: number): Array<string> {
-    return [`${kiri}+2`];
+  function koni323(kiri: number): number {
+    return kiri + 2.32;
   }
-  koni323(3);
+  const koni123: number = koni323(483681247.54385761347);
+  const kiri = (dahanservice: number): string => {
+    return dahanservice.toString();
+  };
   return (
     <>
       <div className="card">
@@ -32,9 +35,8 @@ function App() {
           count is {count}
         </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/*       {koni123.toFixed(27)} */}
+      {kiri(121231331) + " 122ss22"}
     </>
   );
 }
