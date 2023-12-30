@@ -1,4 +1,4 @@
-import React, { AriaAttributes, useState } from "react";
+import React, { AriaAttributes, ReactNode, useState } from "react";
 
 import "./App.css";
 
@@ -12,6 +12,19 @@ function App() {
   function mamad3(kir: Array<number>): Array<number> {
     return [kir[0]];
   }
+  type mamad22 = {
+    title: string;
+    koniha: string;
+  };
+
+  const Section = ({ koniha = "kir", title = "my subheading" }: mamad22) => {
+    return (
+      <section>
+        <h2>{title}</h2>
+        <p>{koniha}</p>
+      </section>
+    );
+  };
 
   const jakesh = mamad3([123452, 21, 123]);
   const koni = mamad(2);
@@ -25,18 +38,27 @@ function App() {
   };
   return (
     <>
+      <Section>as</Section>
       <div className="card">
         <button
           onClick={() => {
-            setCount((count) => count + 1);
+            setCount(count + 1);
             console.log(userId.toFixed(count));
           }}
         >
           count is {count}
         </button>
+        <button
+          className="reset"
+          onClick={() => {
+            setCount(0);
+          }}
+        >
+          Reset
+        </button>
       </div>
-      {/*       {koni123.toFixed(27)} */}
-      {kiri(121231331) + " 122ss22"}
+      {koni123.toFixed(27)}
+      <div>{kiri(121231331) + " 122ss22"}</div>
     </>
   );
 }
