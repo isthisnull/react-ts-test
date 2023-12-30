@@ -1,10 +1,14 @@
-import { AriaAttributes, useState } from "react";
+import React, { AriaAttributes, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
+import { ReactNode } from "react";
+/* interface Nice{
+  count:string;
+ setcount:React.Dispatch<React.SetStateAction<string>>;
+} */
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>();
   const userId: number = Math.PI;
   function mamad(kir: number): object {
     return { name: kir };
@@ -13,6 +17,9 @@ function App() {
   function mamad3(kir: Array<number>): Array<number> {
     return [kir[0]];
   }
+  const mamad12 = (count: number): number => {
+    return count + 1;
+  };
 
   const jakesh = mamad3([123452, 21, 123]);
   mamad(2);
@@ -39,7 +46,7 @@ function App() {
             console.log(userId.toFixed(count));
           }}
         >
-          count is {count}
+          count is {mamad12}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
