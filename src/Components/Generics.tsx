@@ -1,19 +1,19 @@
 import React from "react";
 
-interface ListProps<T> {
-  items: T[];
+interface GenericsProps<T> {
+  kiri: T[];
   render: (item: T) => React.ReactNode;
 }
 
-const List = <T,>({ items, render }: ListProps<T>) => {
+const Generics = <T,>({ kiri, render }: GenericsProps<T>) => {
   return (
     <>
       <ul>
-        {items.map((item, i) => (
+        {kiri.map((item, i) => (
           <li key={i}>{render(item)}</li>
         ))}
       </ul>
     </>
   );
 };
-export default List;
+export default Generics;
