@@ -13,9 +13,9 @@ function App() {
   const [koni, setKoni] = useState<string>("");
   return (
     <>
-      <Heading title="kirekhar" />
+      <Heading title="nam" />
       <Counter setCount={setCount}>Current Count: {count}</Counter>
-      <Popup message="kiriii"></Popup>
+      <Popup message="sad"></Popup>
       <Stringer setKoni={setKoni}>man chiam? {koni}</Stringer>
       <List
         items={["asdav", "dad3123dsaashi"]}
