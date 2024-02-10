@@ -4,7 +4,6 @@ interface StringerProps {
   setKoni: React.Dispatch<React.SetStateAction<string>>;
   children?: ReactNode;
 }
-
 const Stringer = ({ setKoni, children }: StringerProps) => {
   return (
     <>

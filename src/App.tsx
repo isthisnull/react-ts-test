@@ -10,7 +10,7 @@ import Generics from "./Components/Generics.tsx";
 
 function App() {
   const [count, setCount] = useState<number>(1);
-  const [koni, setKoni] = useState<string>("");
+  const [koni, setKoni] = useState<string>("kir");
   return (
     <>
       <Heading title="nam" />
