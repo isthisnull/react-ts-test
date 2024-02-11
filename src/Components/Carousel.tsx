@@ -27,7 +27,20 @@ const Carousel = () => {
           style={{ top: `${top}px`, right: `${right}px` }}
         >
           <div className="card1">
-            <img src="./assets/dddd.jpg" />
+            <div>
+              <img />
+            </div>
+            <div className="info">
+              <div className="name">پرایمر براق گلدن رز صورت </div>
+              <div className="mainPrice">129000 تومان</div>
+              <div className="price"> 88000 تومان</div>
+            </div>
+            <div className="buttons">
+              <button className="likeBtn">
+                <img src="./assets/dddd.jpg" className="likeBtnImg" />
+              </button>
+              <button className="buyBtn">افزودن به سبد خرید </button>
+            </div>
           </div>
           <div className="card1">
             <img src="./assets/dddd.jpg" />

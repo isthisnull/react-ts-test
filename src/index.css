@@ -91,3 +91,8 @@ button:focus-visible {
   margin-left: 20px;
   margin-right: 20px;
 }
+.likeBtn {
+  width: 30px;
+  height: 50px;
+  overflow: hidden;
+}
