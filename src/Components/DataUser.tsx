@@ -19,15 +19,17 @@ const DataUser = () => {
   return (
     <>
       <div className="gg">
-        {Data.map((item) => (
-          <ul>
-            <li key={item.id}>
-              <label>{item.name}</label>
-              <div>{item.price}</div>
-              <img src={item.image} />
-            </li>
-          </ul>
-        ))}
+        <div className="ggf">
+          {Data.map((item) => (
+            <ul>
+              <li key={item.id}>
+                <label>{item.name}</label>
+                <div>{item.price}</div>
+                <img src={item.image} />
+              </li>
+            </ul>
+          ))}
+        </div>
       </div>
     </>
   );

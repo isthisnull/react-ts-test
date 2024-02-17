@@ -94,3 +94,12 @@ button:focus-visible {
   height: 50px;
   overflow: hidden;
 }
+.gg {
+  position: relative;
+}
+.ggf {
+  overflow-x: scroll;
+  display: flex;
+  position: absolute;
+  width: 500px;
+}
