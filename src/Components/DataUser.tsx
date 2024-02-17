@@ -18,6 +18,12 @@ const Dasa: person[] = [
 const DataUser = () => {
   return (
     <>
+      <button className="left" onClick={() => {}}>
+        left
+      </button>
+      <button className="right" onClick={() => {}}>
+        right
+      </button>
       <div className="gg">
         <div className="ggf">
           {Data.map((item) => (
