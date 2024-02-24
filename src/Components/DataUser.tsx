@@ -15,21 +15,35 @@ const Dasa: person[] = [
   { id: 2, name: "kot", price: 1800, image: "./assets/dddd.jpg" },
   { id: 3, name: "kir", price: 1200, image: "./assets/dddd.jpg" },
 ]; */
+let slide: number = 2;
 const DataUser = () => {
   return (
     <>
-      <button className="left" onClick={() => {}}>
-        left
+      <button
+        className="left"
+        onClick={() => {
+          slide++;
+          console.log(slide);
+        }}
+      >
+        <a href={`#${slide}`}>left</a>
       </button>
-      <button className="right" onClick={() => {}}>
-        right
+
+      <button
+        className="right"
+        onClick={() => {
+          slide--;
+          console.log(slide);
+        }}
+      >
+        <a href={`#${slide}`}>right</a>
       </button>
 
       <div className="gg">
         <div className="ggf">
           {Data.map((item) => (
             <ul>
-              <li key={item.id}>
+              <li key={item.id} id={`${item.id}`}>
                 <label>{item.name}</label>
                 <div>{item.price}</div>
                 <img src={item.image} />
