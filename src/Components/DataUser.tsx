@@ -19,19 +19,20 @@ let slide: number = 0;
 const DataUser = () => {
   return (
     <>
-      <button
-        className="left"
-        onClick={() => {
-          console.log(slide);
-        }}
-      >
-        <a href={`#${slide++}`}>left</a>
-      </button>
+      <a href={`#${slide}`}>
+        <button
+          className="left"
+          onClick={() => {
+            slide++;
+          }}
+        >
+          left
+        </button>
+      </a>
 
       <button
         className="right"
         onClick={() => {
-          slide--;
           console.log(slide);
         }}
       >
