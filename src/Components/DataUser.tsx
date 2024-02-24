@@ -15,18 +15,17 @@ const Dasa: person[] = [
   { id: 2, name: "kot", price: 1800, image: "./assets/dddd.jpg" },
   { id: 3, name: "kir", price: 1200, image: "./assets/dddd.jpg" },
 ]; */
-let slide: number = 2;
+let slide: number = 0;
 const DataUser = () => {
   return (
     <>
       <button
         className="left"
         onClick={() => {
-          slide++;
           console.log(slide);
         }}
       >
-        <a href={`#${slide}`}>left</a>
+        <a href={`#${slide++}`}>left</a>
       </button>
 
       <button
