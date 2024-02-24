@@ -6,7 +6,7 @@ interface person {
   name: string;
   price: number;
   image: string;
-}
+} 
 
 const Koni: {}[] = [{ 1: 1 }, 2, 3, 4, 5];
 const Dasa: person[] = [
@@ -24,6 +24,7 @@ const DataUser = () => {
       <button className="right" onClick={() => {}}>
         right
       </button>
+
       <div className="gg">
         <div className="ggf">
           {Data.map((item) => (

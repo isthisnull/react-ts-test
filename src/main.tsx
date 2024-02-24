@@ -7,7 +7,7 @@ import DataUser from "./Components/DataUser.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
-    <Carousel />
+    {/* <Carousel /> */}
     <DataUser />
   </React.StrictMode>
 );

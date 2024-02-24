@@ -23,8 +23,9 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: space-around;
   place-items: center;
-  max-width: 1000px;
+
   min-width: 320px;
   min-height: 100vh;
 }
@@ -96,10 +97,16 @@ button:focus-visible {
 }
 .gg {
   position: relative;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ggf {
   overflow-x: scroll;
   display: flex;
   position: absolute;
-  width: 500px;
+  /*   width: 100vw; */
+  max-width: 800px;
 }
